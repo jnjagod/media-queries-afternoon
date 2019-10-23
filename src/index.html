@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Agency - Start Bootstrap Theme</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ae59a9e5ad.js" crossorigin="anonymous" async></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h3>Start Bootstrap</h3>
+      </div>
+      <nav>
+        <ul>
+          <li>SERVICES</li>
+          <li>PORTFOLIO</li>
+          <li>ABOUT</li>
+          <li>TEAM</li>
+          <li>CONTACT</li>
+        </ul>
+        <button class="menu">
+          <span>MENU</span>
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div class="cheese"></div>
+</body>
+<script>
+  window.onscroll = function() {scrollFunction()}
+  function scrollFunction () {
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector('.container').style.height = '55px'
+      document.querySelector('.logo').style.fontSize = '18px'
+    } else {
+      document.querySelector('.container').style.height = 'auto'
+      document.querySelector('.logo').style.fontSize = '24px'
+    }
+  }
+</script>
+</html>
